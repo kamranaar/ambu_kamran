@@ -18,7 +18,7 @@ class _OtpVerifyState extends State<OtpVerify> {
   @override
   void initState() {
     super.initState();
-    startTimer(); // Start the timer when the widget is initialized
+    startTimer();
   }
 
   void startTimer() {
@@ -28,7 +28,7 @@ class _OtpVerifyState extends State<OtpVerify> {
           timeCounter--;
         });
       } else {
-        timer.cancel(); // Cancel the timer when it reaches 0
+        timer.cancel();
       }
     });
   }
